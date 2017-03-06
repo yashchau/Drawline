@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="x value"
+        android:hint="X Value"
         android:ems="10"
         android:layout_marginTop="13dp"
         android:id="@+id/xvalue"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="y value"
+        android:hint="Y Value"
         android:ems="10"
         android:id="@+id/yvalue"
         android:layout_alignBaseline="@+id/xvalue"
@@ -37,8 +37,8 @@
 
     <ImageView
         android:id="@+id/DrawingImageView"
-        android:layout_width="1000dp"
-        android:layout_height="800dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/xvalue" />
 </RelativeLayout>
