@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         final Paint paint = new Paint();
         paint.setColor(Color.rgb(255, 153, 51));
         paint.setStrokeWidth(10);
-        canvas.drawLine(startx, starty, endx, endy, paint);
+        //canvas.drawLine(startx, starty, endx, endy, paint);
         xvalue.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 i = Integer.parseInt(is);
                 System.out.println("Value: " + i);
                 endx = endx + i;
-                canvas.drawLine(startx, starty, endx, endy, paint);
-                startx = endx;
+                //canvas.drawLine(startx, starty, endx, endy, paint);
+                //startx = endx;
 
                 return false;
             }
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 endy = endy - j;
                 canvas.drawLine(startx, starty, endx, endy, paint);
                 starty = endy;
+                startx = endx;
 
                 return false;
             }
